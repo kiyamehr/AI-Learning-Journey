@@ -37,3 +37,57 @@ def scale_numeric_features(*cols):
             col[numeric_cols] = scaler.fit_transform(col[numeric_cols])
         else:
             col[numeric_cols] = scaler.transform(col[numeric_cols])
+
+def multi_hot_encode(items, column, separator="|"):
+    """
+    Convert a column containing multiple items into multi-hot encoded vectors.
+
+    Parameters:
+        items (list):
+            A list of all possible items/categories.
+            Example: ["Action", "Comedy", "Drama"]
+
+        column (iterable):
+            A column where each value contains one or more items
+            separated by the given separator.
+            Example: ["Action|Comedy", "Drama", "Action|Drama"]
+
+        separator (str):
+            The character used to separate multiple items in each value.
+            Defaults to "|".
+
+    Returns:
+        list:
+            A list of multi-hot encoded vectors, where each item is represented
+            by 1 if it is present and 0 if it is absent.
+    """
+
+    # Store the encoded vector for each row
+    encoded_rows = []
+
+    # Loop through every value in the input column
+    for value in column:
+
+        # Split the value into individual items using the separator
+        # Example: "Action|Comedy" -> ["Action", "Comedy"]
+        item_row = value.split(separator)
+
+        # Store the encoded values for the current row
+        encoded_array = []
+
+        # Check every possible item
+        for item in items:
+
+            # If the item exists in the current row, encode it as 1
+            if item in item_row:
+                encoded_array.append(1)
+
+            # Otherwise, encode it as 0
+            else:
+                encoded_array.append(0)
+
+        # Add the encoded vector for this row to the results
+        encoded_rows.append(encoded_array)
+
+    # Return the multi-hot encoded data
+    return encoded_rows
