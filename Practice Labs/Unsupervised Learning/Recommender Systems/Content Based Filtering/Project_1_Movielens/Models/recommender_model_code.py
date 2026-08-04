@@ -41,9 +41,14 @@ class MovieRecommender(tf.keras.Model):
         ], name='movie_model')
         
         # -------------------------
-        # Dot Product
+        # Interaction Network
         # -------------------------
-        self.dot_product = tf.keras.layers.Dot(axes=1, name='dot_product')
+        
+        self.interaction_NN = tf.keras.models.Sequential([
+            Dense(64, activation='relu', name='interactionL1', kernel_regularizer=self.l2_reg),
+            Dense(32, activation='relu', name='interactionL2', kernel_regularizer=self.l2_reg),
+            Dense(1, activation='linear', name='interactionL3', kernel_regularizer=self.l2_reg)
+        ], name='interaction_model')
 
     def call(self, inputs):
         
@@ -55,11 +60,15 @@ class MovieRecommender(tf.keras.Model):
         # Actual output: 32-dimensional movie representation
         vm = self.movie_NN(movie_input)
 
-        # Calc Dot Product of the output from the two models
-        output = self.dot_product([vu, vm])
+        # Adding Vu & Vm Together
+        x = tf.concat([vu, vm], axis=1)
+        
+        # Moved though the interaction model the output from the two previous models
+        output = self.interaction_NN(x)
 
         return output    
     
+    # In order to Save The Model
     def get_config(self):
 
         config = super().get_config()
