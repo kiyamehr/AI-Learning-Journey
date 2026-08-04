@@ -55,3 +55,29 @@ def load_loss_val():
     ]
         
     return loss, val_loss
+
+def create_prediction_results(data, movie_details, predictions):
+    comparison = data.copy()
+
+    comparison['predicted_rating'] = np.round(
+        predictions.flatten(), 1
+    )
+
+    comparison = comparison.merge(
+        movie_details[['movieId', 'title']],
+        on='movieId',
+        how='left'
+    )
+
+    comparison = comparison.merge(
+        movie_details[['movieId', 'genres']],
+        on='movieId',
+        how='left'
+    )
+
+    comparison = comparison.drop(
+        'genres_encoded',
+        axis=1
+    )
+
+    return comparison
