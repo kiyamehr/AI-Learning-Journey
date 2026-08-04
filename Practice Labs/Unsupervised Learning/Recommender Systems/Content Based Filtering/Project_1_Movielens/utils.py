@@ -1,4 +1,5 @@
 import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
 
 def multi_hot_encode(items, column, separator="|"):
     
@@ -81,3 +82,40 @@ def create_prediction_results(data, movie_details, predictions):
     )
 
     return comparison
+
+def find_similares(movies, model, movie_id, top_n):
+    movie_features = np.array(
+        movies['genres_encoded'].tolist(),
+        dtype=np.float32
+    )
+
+    # Get learned movie vectors
+    movie_embedding = model.movie_NN.predict(
+        movie_features,
+        verbose=0
+    )
+
+    # Find the row/index of the requested movie
+    movie_index = movies.index[
+        movies['movieId'] == movie_id
+    ][0]
+
+    # Get the requested movie's embedding
+    candidate_movie = movie_embedding[movie_index].reshape(1, -1)
+
+    # Calculate similarity with every movie
+    similarities = cosine_similarity(
+        candidate_movie,
+        movie_embedding
+    ).flatten()
+
+    # Get indices sorted by similarity
+    similar_indices = np.argsort(similarities)[::-1]
+
+    # Remove the movie itself
+    similar_indices = similar_indices[
+        similar_indices != movie_index
+    ][:top_n]
+
+    return movies.iloc[similar_indices]
+    
