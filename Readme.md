@@ -12,7 +12,7 @@ I have zero ML projects right now. Just a notebook, a lot of questions, and a qu
 
 | Directory | Description | Status |
 |-----------|-------------|:------:|
-| `courses/andrew-ng/machine-learning-specialization/` | Machine Learning Specialization by Andrew Ng | 🔄 In Progress |
+| `courses/andrew-ng/machine-learning-specialization/` | Machine Learning Specialization by Andrew Ng | ✅ Completed |
 | `courses/andrew-ng/deep-learning-specialization/` | Deep Learning Specialization by Andrew Ng | 📅 Planned |
 | `courses/jadi-youtube-course/` | Persian Machine Learning course by Jadi | ✅ Completed |
 | `practice-labs/` | Hands-on implementations and experiments covering regression, classification, tree-based models, and neural networks | 🔄 Active |
