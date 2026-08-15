@@ -1,59 +1,104 @@
-# My Machine Learning Journey
+# My AI & Machine Learning Journey
 
-## Documenting my transition from frontend development to machine learning. One notebook at a time.
+> Documenting my journey from frontend development into machine learning, deep learning, and AI.
 
-After a 3-month internet blackout in Iran, I pivoted from frontend development to machine learning. This repo is where I document everything I learn - from the first line of NumPy code to (hopefully) understanding how models actually think.
+This repository is a record of what I learn along the way - **courses, notes, experiments, projects, and implementations**.
 
-I have zero ML projects right now. Just a notebook, a lot of questions, and a quiet determination to start over.
-
----
-
-## 📚 What you'll find here
-
-| Directory | Description | Status |
-|-----------|-------------|:------:|
-| `courses/andrew-ng/machine-learning-specialization/` | Machine Learning Specialization by Andrew Ng | ✅ Completed |
-| `courses/andrew-ng/deep-learning-specialization/` | Deep Learning Specialization by Andrew Ng | 📅 Planned |
-| `courses/jadi-youtube-course/` | Persian Machine Learning course by Jadi | ✅ Completed |
-| `practice-labs/` | Hands-on implementations and experiments covering regression, classification, tree-based models, and neural networks | 🔄 Active |
-| `tools/numpy/` | NumPy fundamentals: arrays, vectorized operations, statistics, and random distributions | ✅ Active |
-| `tools/pandas/` | Data manipulation, cleaning, transformation, and DataFrame operations | ✅ Active |
-| `tools/matplotlib/` | Data visualization and plotting techniques | ✅ Active |
-| `utilities/preprocessing/` | Reusable preprocessing utilities (e.g., feature scaling and data preparation) | 🔄 Growing |
-| `utilities/model-tuning/` | Reusable model tuning utilities (e.g., XGBoost hyperparameter tuning) | 🔄 Growing |
-
-> ✅ Started = first scripts written, actively learning
-> 🔄 In progress & Growing = working through systematically
-> 📅 Planned = next on my list
+I'm not trying to make everything perfect. The goal is to understand the concepts, write the code myself, experiment with what I learn, and keep a record of the progress.
 
 ---
 
-## 🧠 Why I'm doing this
+## 🧭 Where I'm At
 
-I used to build frontend components (JavaScript, Tailwind, HTML/CSS). But after months without reliable internet access, I realized I wanted something **deeper** - more about structure, logic, and how things actually *think*.
+I'm currently building my foundation in **machine learning and deep learning**.
 
-Machine learning feels like that. Harder, yes. But worth it.
+I've completed **Andrew Ng's Machine Learning Specialization** and am now continuing with his **Deep Learning Specialization**.
 
----
+My learning is moving roughly along this path:
 
-## 📅 My learning path
-
-1. **Python basics** (done, not in this repo)
-2. **NumPy** - arrays, math, distributions ✅
-3. **Pandas** - DataFrames, merging, cleaning ✅ (started)
-4. **Matplotlib** - plotting, scattering, visuals ✅ (started)
-5. **Andrew Ng's ML Specialization** - In Progress
-6. **Small projects** - regression, classification, then...
-7. **Who knows?** I'm still at the beginning.
+**Python & Data → Machine Learning → Deep Learning → AI**
 
 ---
 
-## 🙏 A note to experienced ML people
+## 📚 Learning
 
-If you've walked this path before - I'd genuinely love to hear from you. What surprised you? What do you wish you'd known on day one? Open an issue or connect on LinkedIn.
+The repository contains coursework and learning materials from the courses and resources I'm working through.
+
+### Completed
+
+* ✅ **Machine Learning Specialization** - DeepLearning.AI & Stanford Online
+* ✅ **Machine Learning with Jadi** - YouTube
+
+### In Progress
+
+* 🟡 **Deep Learning Specialization** - DeepLearning.AI
+
+New courses and resources will be added as my learning progresses.
+
+---
+
+## 🛠️ What I'm Working With
+
+### Languages
+
+* Python
+
+### Machine Learning & Data
+
+* NumPy
+* Pandas
+* Matplotlib
+* Scikit-learn
+
+### Deep Learning
+
+* TensorFlow
+* Keras
+
+### Tools
+
+* Jupyter Notebook
+* VS Code
+* Git & GitHub
+
+---
+
+## 🧪 Projects & Experiments
+
+Alongside coursework, I build projects and experiments to apply what I'm learning.
+
+These range from smaller implementations and exercises to more complete machine learning projects and Kaggle challenges.
+
+The projects will become more advanced as I progress through machine learning and deep learning.
+
+---
+
+## 📖 Papers & Further Learning
+
+I'm also gradually getting into reading **machine learning and AI research papers** to understand how ideas move from theory and research into practical systems.
+
+This is still a developing part of the journey.
+
+---
+
+## 📈 Progress
+
+This repository is intentionally a work in progress.
+
+Some parts are polished. Others are rough notes or experiments from when I was first learning a concept. I keep them because they show the progression rather than just the final result.
+
+The repository will continue changing as my knowledge and interests evolve.
+
+---
+
+## 🎯 Long-Term Direction
+
+My goal is to build a strong foundation in machine learning and deep learning and eventually work toward **building real AI systems**.
+
+For now, I'm focusing on understanding the fundamentals properly rather than rushing through topics.
 
 ---
 
 ## 📜 License
 
-MIT - use anything you find useful.
+MIT - feel free to use anything in this repository that you find useful.
