@@ -9,10 +9,10 @@ My coursework, notes, and programming assignments from **Andrew Ng's Machine Lea
 
 This specialization, offered by DeepLearning.AI and Stanford Online, covers foundational machine learning concepts, including:
 
-* **Supervised Learning** — Regression, Classification
-* **Advanced Learning Algorithms** — Neural Networks, Decision Trees, XGBoost
-* **Unsupervised Learning** — Clustering, Anomaly Detection, Recommender Systems
-* **Best Practices** — Bias/Variance, Error Analysis, ML Project Lifecycle
+* **Supervised Learning** - Regression, Classification
+* **Advanced Learning Algorithms** - Neural Networks, Decision Trees, XGBoost
+* **Unsupervised Learning** - Clustering, Anomaly Detection, Recommender Systems
+* **Best Practices** - Bias/Variance, Error Analysis, ML Project Lifecycle
 
 Taught by **Andrew Ng**, a pioneer in AI education.
 
