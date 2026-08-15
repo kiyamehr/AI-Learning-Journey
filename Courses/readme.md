@@ -1,43 +1,30 @@
-# 📚 Courses
+# Courses
 
-This directory contains the courses, tutorials, and learning resources I have completed or am currently studying as part of my machine learning journey.
+This section contains the courses and learning resources I work through during my machine learning and AI journey.
 
-Each course folder includes notes, exercises, assignments, code implementations, and key takeaways.
+I use courses as the foundation for learning new concepts, while the projects in this repository give me a place to apply and experiment with what I've learned.
 
----
+## 📚 Courses
 
-## 🎯 Goals
+| Course                          | Provider                          | Status         |
+| ------------------------------- | --------------------------------- | -------------- |
+| Machine Learning Specialization | DeepLearning.AI & Stanford Online | 🟢 Completed   |
+| Machine Learning with Jadi      | YouTube                           | 🟢 Completed   |
+| Deep Learning Specialization    | DeepLearning.AI                   | 🟡 In Progress |
 
-The purpose of this section is to:
+## 🎯 What I'm Learning
 
-- Track my progress through structured learning paths
-- Document important concepts and insights
-- Practice implementing algorithms from scratch
-- Build a strong foundation in machine learning and artificial intelligence
-- Create a public record of my learning journey
+Through these courses, I'm building a strong foundation in:
 
----
+* Machine learning fundamentals
+* Supervised and unsupervised learning
+* Regression and classification
+* Neural networks
+* Model evaluation and improvement
+* Data analysis and preprocessing
+* Deep learning
+* Practical implementation with Python
 
-## 🗂️ Course List
+## 📈 Progress
 
-| Course | Provider | Status | Topics |
-|--------|----------|--------|--------|
-| Machine Learning Specialization | DeepLearning.AI & Stanford Online | 🟡 In Progress | Supervised Learning, Neural Networks, Unsupervised Learning |
-| Machine Learning with Jadi | YouTube | 🟢 Completed | Python for ML, Data Analysis, ML Fundamentals |
-
-> **Legend:** 🟢 Completed · 🟡 In Progress · ⚪ Planned
-
----
-
-## 📁 Structure
-
-```text
-courses/
-├── andrew-ng-ml-specialization/
-│   ├── course-1-supervised-learning/
-│   ├── course-2-advanced-learning-algorithms/
-│   └── course-3-unsupervised-learning/
-│
-└── jadi-machine-learning/
-    ├── notes/
-    └── exercises/
+This is an evolving list. As I continue learning, new courses and resources will be added as I move toward more advanced machine learning, deep learning, and AI topics.
