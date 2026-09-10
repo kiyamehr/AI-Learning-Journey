@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "freestyle": "^0.2.13",
+    "pnpm": "^12.3.4"
+  }
+}
