@@ -1,0 +1,17 @@
+# Normalize text files to LF
+* text=auto
+
+# Explicit file types
+*.py text eol=lf
+*.ipynb text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+
+# Binary files
+*.pth binary
+*.pt binary
+*.png binary
+*.jpg binary
+*.jpeg binary

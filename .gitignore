@@ -3,4 +3,13 @@
 .vscode
 __pycache__/
 test_debug.py
+.ipynb_checkpoints/__pycache__/
+*.py[cod]
 .ipynb_checkpoints/
+*.pth
+*.pt
+
+# Python virtual environments
+.venv/
+venv/
+env/
